@@ -1,0 +1,49 @@
+{
+    "questions_and_answers": [
+        {
+            "question": "What is useState and how does it work in React?",
+            "answer": {
+                "definition": "useState is a React Hook that allows functional components to have state variables. It returns a stateful value and a function to update it.",
+                "how_it_works": "When you call useState(initialValue), React creates a state variable with that initial value and gives you a setter function. When the setter is called, React re-renders the component with the updated state.",
+                "example": "const [count, setCount] = useState(0);"
+            }
+        },
+        {
+            "question": "What is the purpose of useEffect in React?",
+            "answer": {
+                "definition": "useEffect is a React Hook that lets you perform side effects (like data fetching, subscriptions, or manually changing the DOM) in function components.",
+                "purpose": "It replaces lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount in class components.",
+                "how_it_works": "useEffect runs after every render by default. You can control when it runs by passing a dependency array as the second argument.",
+                "example": "useEffect(() => { fetchData(); }, [id]);"
+            }
+        },
+        {
+            "question": "What is a custom hook in React and when should you use one?",
+            "answer": {
+                "definition": "A custom hook is a JavaScript function whose name starts with 'use' and that can call other hooks inside it.",
+                "purpose": "To extract and reuse logic shared between multiple components, making the code cleaner and more reusable.",
+                "when_to_use": "Use when two or more components share the same logic or when a component becomes too complex.",
+                "example": "function useWindowWidth() { const [width, setWidth] = useState(window.innerWidth); useEffect(() => { window.addEventListener('resize', () => setWidth(window.innerWidth)); }, []); return width; }"
+            }
+        },
+        {
+            "question": "Difference between controlled and uncontrolled components? Which one is better?",
+            "answer": {
+                "definition": "Controlled components are form inputs whose values are managed by React state, while uncontrolled components keep their own state internally in the DOM.",
+                "controlled": "In controlled components, React state is the 'single source of truth'. The input's value is passed via props, and changes are handled through onChange handlers.",
+                "uncontrolled": "Uncontrolled components rely on the DOM to manage state using refs. They’re typically used for simpler use-cases where full control isn’t required.",
+                "which_is_better": "Controlled components are usually preferred for complex forms due to easier validation and better control. Uncontrolled are fine for basic input scenarios."
+            }
+        },
+        {
+            "question": "Tell us something about useFormStatus() (explore and explain)",
+            "answer": {
+                "definition": "useFormStatus is a React/Next.js-specific hook that provides the current status of a form submission, like whether it's pending, successful, or has an error.",
+                "purpose": "It helps to improve UX by managing form submission states, such as disabling buttons or showing loading indicators.",
+                "how_it_works": "This hook is used inside a form component and returns properties like 'pending' which can be used to display UI feedback.",
+                "example": "const { pending } = useFormStatus(); if (pending) { return <span>Submitting...</span>; }",
+                "note": "Primarily available in frameworks like Next.js (App Router), not part of core React."
+            }
+        }
+    ]
+}

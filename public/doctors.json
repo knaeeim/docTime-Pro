@@ -1,0 +1,197 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/P3tXMgH/Doctor-M-6.jpg",
+        "name": "Dr. Arjun Mehta",
+        "education": "MBBS, MD (Internal Medicine)",
+        "speciality": "Cardiologist",
+        "experience": "12 years",
+        "registrationNumber": "MH2021345678",
+        "workingAt": "Fortis Hospital, Mumbai",
+        "fees": 1500,
+        "available": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ]
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/wFc0XChZ/Doctor-1.jpg",
+        "name": "Dr. Priya Sharma",
+        "education": "MBBS, MS (Gynecology)",
+        "speciality": "Gynecologist",
+        "experience": "9 years",
+        "registrationNumber": "DL2019234567",
+        "workingAt": "Apollo Cradle, Delhi",
+        "fees": 1200,
+        "available": [
+            "Monday",
+            "Wednesday",
+            "Friday"
+        ]
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/BHNXwkVS/Doctor-M-5.jpg",
+        "name": "Dr. Sameer Kapoor",
+        "education": "MBBS, MS (Orthopedics)",
+        "speciality": "Orthopedic Surgeon",
+        "experience": "15 years",
+        "registrationNumber": "KA2018345621",
+        "workingAt": "Manipal Hospital, Bangalore",
+        "fees": 1150,
+        "available": [
+            "Tuesday",
+            "Thursday",
+            "Saturday"
+        ]
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/h1rDfKsF/Doctor-3.jpg",
+        "name": "Dr. Neha Verma",
+        "education": "MBBS, DNB (Dermatology)",
+        "speciality": "Dermatologist",
+        "experience": "7 years",
+        "registrationNumber": "TN2020456712",
+        "workingAt": "SkinCure Clinic, Chennai",
+        "fees": 1400,
+        "available": [
+            "Monday",
+            "Thursday",
+            "Sunday"
+        ]
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/fGp65FsK/Doctor-M-4.jpg",
+        "name": "Dr. Raghav Joshi",
+        "education": "MBBS, DM (Neurology)",
+        "speciality": "Neurologist",
+        "experience": "10 years",
+        "registrationNumber": "GJ2019456790",
+        "workingAt": "NeuroCare Center, Ahmedabad",
+        "fees": 1050,
+        "available": [
+            "Wednesday",
+            "Friday",
+            "Saturday"
+        ]
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/RGgKb3QH/Doctor-4.jpg",
+        "name": "Dr. Ananya Iyer",
+        "education": "MBBS, MS (ENT)",
+        "speciality": "ENT Specialist",
+        "experience": "8 years",
+        "registrationNumber": "KL2021234568",
+        "workingAt": "Aster Medcity, Kochi",
+        "fees": 950,
+        "available": [
+            "Tuesday",
+            "Thursday",
+            "Sunday"
+        ]
+    },
+    {
+        "id": 7,
+        "image": "https://i.ibb.co/RpzYmDyw/Doctor-M-3.webp",
+        "name": "Dr. Mohan Reddy",
+        "education": "MBBS, MCh (Urology)",
+        "speciality": "Urologist",
+        "experience": "13 years",
+        "registrationNumber": "AP2018345671",
+        "workingAt": "UroPlus Hospital, Hyderabad",
+        "fees": 1300,
+        "available": [
+            "Monday",
+            "Wednesday",
+            "Saturday"
+        ]
+    },
+    {
+        "id": 8,
+        "image": "https://i.ibb.co/67FGY2Bq/Doctor-5.jpg",
+        "name": "Dr. Sanya Kulkarni",
+        "education": "MBBS, MD (Pediatrics)",
+        "speciality": "Pediatrician",
+        "experience": "11 years",
+        "registrationNumber": "RJ2020345623",
+        "workingAt": "Rainbow Children's Hospital, Jaipur",
+        "fees": 1100,
+        "available": [
+            "Tuesday",
+            "Friday",
+            "Sunday"
+        ]
+    },
+    {
+        "id": 9,
+        "image": "https://i.ibb.co/nNMNs5Gw/Doctor-M-2.jpg",
+        "name": "Dr. Vishal Rao",
+        "education": "MBBS, MS (General Surgery)",
+        "speciality": "General Surgeon",
+        "experience": "14 years",
+        "registrationNumber": "UP2020123456",
+        "workingAt": "AIIMS, Lucknow",
+        "fees": 1000,
+        "available": [
+            "Wednesday",
+            "Saturday",
+            "Sunday"
+        ]
+    },
+    {
+        "id": 10,
+        "image": "https://i.ibb.co/bMhNLMzk/Doctor-6.jpg",
+        "name": "Dr. Kavita Bansal",
+        "education": "MBBS, DGO",
+        "speciality": "Obstetrician",
+        "experience": "9 years",
+        "registrationNumber": "HR2020789543",
+        "workingAt": "Bansal Maternity Clinic, Panchkula",
+        "fees": 900,
+        "available": [
+            "Monday",
+            "Tuesday",
+            "Friday"
+        ]
+    },
+    {
+        "id": 11,
+        "image": "https://i.ibb.co/5XpSVDqt/Doctor-M-1.jpg",
+        "name": "Dr. Nikhil Sen",
+        "education": "MBBS, DM (Endocrinology)",
+        "speciality": "Endocrinologist",
+        "experience": "10 years",
+        "registrationNumber": "WB2020456123",
+        "workingAt": "AMRI Hospitals, Kolkata",
+        "fees": 700,
+        "available": [
+            "Thursday",
+            "Saturday",
+            "Sunday"
+        ]
+    },
+    {
+        "id": 12,
+        "image": "https://i.ibb.co/G3fqQ4rR/Doctor-2.jpg",
+        "name": "Dr. Ritu Deshmukh",
+        "education": "MBBS, MD (Psychiatry)",
+        "speciality": "Psychiatrist",
+        "experience": "6 years",
+        "registrationNumber": "PB2021456098",
+        "workingAt": "MindCare Clinic, Ludhiana",
+        "fees": 800,
+        "available": [
+            "Tuesday",
+            "Wednesday",
+            "Friday"
+        ]
+    }
+]
