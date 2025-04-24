@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { BookingContext } from '../Provider/context';
-import { Bar, BarChart, LabelList, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Cell, LabelList, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import { Link } from 'react-router';
 import toast from 'react-hot-toast';
 import Loading from '../Components/Loading';
@@ -25,17 +25,17 @@ const Appointment = () => {
         return <Loading></Loading>;
     }
 
-    const getPath = (x, y, width, height) => (
-        `M${x},${y + height}
-         C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3} ${x + width / 2}, ${y}
-         C${x + width / 2},${y + height / 3} ${x + 2 * width / 3},${y + height} ${x + width}, ${y + height}
-         Z`
-      );
+    const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
+
+    const getPath = (x, y, width, height) => {
+        return `M${x},${y + height}C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3}
+        ${x + width / 2}, ${y}
+        C${x + width / 2},${y + height / 3} ${x + (2 * width) / 3},${y + height} ${x + width}, ${y + height}
+        Z`;
+    };
       
     const TriangleBar = (props) => {
-        const {
-          fill, x, y, width, height,
-        } = props;
+        const { fill, x, y, width, height } = props;
       
         return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
     };
@@ -60,14 +60,15 @@ const Appointment = () => {
                     <div>
                         <div className='w-5/6 mx-auto mb-16 bg-white md:py-10 md:px-8 rounded-2xl'>
                             <ResponsiveContainer width={'100%'} height={500}>
-                                <BarChart width={1400} height={500} data={getFromLocalStorage} margin={{ top: 40, right: 30, left: 20, bottom: 5 }}>
-                                    <XAxis dataKey="name"/>
-                                    <YAxis />
-                                    <Tooltip />
-                                    <Bar dataKey="fees" fill="#8884d8"
-                                    shape={<TriangleBar/>}>
-                                        <LabelList value="fees" offset={0} position="top" />
-                                    </Bar>
+                            <BarChart width={500} height={300} data={getFromLocalStorage} margin={{ top: 20, right: 30, left: 20, bottom: 5,}}>
+                                <CartesianGrid strokeDasharray="3 3" />
+                                <XAxis dataKey="name" />
+                                <YAxis />
+                                <Bar dataKey="fees" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
+                                    {getFromLocalStorage.map((entry, index) => (
+                                    <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+                                    ))}
+                                </Bar>
                                 </BarChart>
                             </ResponsiveContainer>
                         </div>
@@ -80,8 +81,8 @@ const Appointment = () => {
                         {
                             getFromLocalStorage.map((doctor, index) => {
                                 return (
-                                    <div className='w-5/6 mx-auto bg-white shadow-xl rounded-lg px-8 py-8 mb-5'>
-                                        <div key={index} className='flex flex-col md:flex-row justify-between items-center'>
+                                    <div key={index} className='w-5/6 mx-auto bg-white shadow-xl rounded-lg px-8 py-8 mb-5'>
+                                        <div className='flex flex-col md:flex-row justify-between items-center'>
                                             <div>
                                                 <h1 className='text-2xl font-bold'>{doctor.name}</h1>
                                                 <h1 className='text-lg text-gray-500'>{doctor.education}</h1>
