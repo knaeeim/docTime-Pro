@@ -9,7 +9,7 @@ import { IoMdHappy } from "react-icons/io";
 
 const UserDetails = () => {
     const doctor = useLoaderData();
-    const { name, image, education, speciality, workingAt, registrationNumber, fees, available} = doctor;
+    const { name, image, education, speciality, workingAt, registrationNumber, fees, available, designation} = doctor;
     const { booking, setBooking } = useContext(BookingContext);
     const navigate = useNavigate();
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -70,6 +70,7 @@ const UserDetails = () => {
                     <div>
                         <p className='text-gray-500'>{education}</p>
                         <p className='text-gray-500'>{speciality}</p>
+                        <p className='text-gray-500'>{designation}</p>
                     </div>
                     <p className='text-gray-500 text-xl'>Working at: <br /> <span className='font-bold text-black'>{workingAt}</span></p>
                     <p className='text-gray-500 border-b-2 border-t-2 border-dashed flex justify-start items-center py-3 gap-2'><PiTrademarkRegisteredBold size={25}/> Reg No:  {registrationNumber}</p>
