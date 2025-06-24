@@ -2,8 +2,6 @@
 
 **A sleek, modern doctor booking platform** — built with React 19 and Tailwind CSS 4, offering a smooth experience to browse doctors, view profiles, and manage appointments.
 
-![Header](https://raw.githubusercontent.com/knaeeim/knaeeim/main/Md%20Khairul%20Bashar%20github%20banner.png)
-
 ---
 
 ## 🚀 Tech Stack
