@@ -1,12 +1,63 @@
-# React + Vite
+# 🩺 docTime‑Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A sleek, modern doctor booking platform** — built with React 19 and Tailwind CSS 4, offering a smooth experience to browse doctors, view profiles, and manage appointments.
 
-Currently, two official plugins are available:
+![Header](https://raw.githubusercontent.com/knaeeim/knaeeim/main/Md%20Khairul%20Bashar%20github%20banner.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ React 19
+- 🎨 Tailwind CSS 4
+- 🔢 React CountUp
+- 📊 Recharts
+- 🌐 React Router 7
+- 🌈 Styled Components
+- 🔔 React Hot Toast
+- 📦 Vite for build & dev server
+
+---
+
+## 📋 Features
+
+- 🔍 **Search by doctor name** directly from the homepage
+- 👨‍⚕️ Displays doctor profiles (initially 6)
+- 📈 **Patient counter** section with animation (React CountUp)
+- 📄 Individual **doctor detail pages** with:
+  - Full profile info
+  - Appointment booking option
+- 📅 **Appointment status page** includes:
+  - Fees displayed via Recharts graph
+  - History of appointments
+  - Option to **cancel appointments**
+- 🚫 Graceful 404 page for invalid URLs
+
+> 🛑 No authentication is required in this version.
+
+---
+
+## 🖼️ Pages Overview
+
+| Page                  | Description                                                                 |
+|-----------------------|-----------------------------------------------------------------------------|
+| `/` (Home)            | Hero banner, search box, doctor list, and counter                          |
+| `/doctor/:id`         | Dynamic doctor details with booking option                                 |
+| `/appointments`       | Shows current appointment status and charts                                |
+| `*` (invalid route)   | Custom 404 page with a smooth user message                                 |
+
+---
+
+## 📦 Installation & Setup
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/knaeeim/docTime-Pro.git
+cd docTime-Pro
+
+# 2. Install dependencies
+npm install
+
+# 3. Start development server
+npm run dev
+
